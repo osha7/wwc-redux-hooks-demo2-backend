@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Musician.all.destroy
-Song.all.destroy
+Musician.destroy_all
+Song.destroy_all
 
 aretha = Musician.create(name: "Aretha Franklin", origin: "Memphis, Tennessee", is_active: false)
 nina = Musician.create(name: "Nina Simone", origin: "Tryon, North Carolina", is_active: false)
