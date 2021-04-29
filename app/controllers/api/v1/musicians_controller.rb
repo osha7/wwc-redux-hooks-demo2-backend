@@ -1,8 +1,12 @@
 class Api::V1::MusiciansController < ApplicationController
     
     def index
+        
         musicians = Musician.all
-        render json: {musicians: musicians}
+        # byebug
+        render json: {
+            musicians: musicians
+        }
     end
 
     def show
