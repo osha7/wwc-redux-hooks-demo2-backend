@@ -64,7 +64,7 @@ class Api::V1::MusiciansController < ApplicationController
     private
 
     def musician_params
-        params.require(:musician).permit(:name, :origin, :is_active)
+        params.require(:musician).permit(:id, :name, :origin, :is_active)
     end
 
 end
